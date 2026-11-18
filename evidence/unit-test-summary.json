@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "targetPlatform": "Windows 11 (x86_64)",
+  "command": "cargo test --manifest-path src-tauri/Cargo.toml --lib --features tauri/custom-protocol --locked --offline",
+  "summary": {
+    "total": 218,
+    "passed": 216,
+    "failed": 0,
+    "ignored": 2,
+    "measured": 0,
+    "compilerWarnings": 0,
+    "wallTimeSeconds": 14.70
+  },
+  "ignoredReason": "2 tests require OS symlink creation privilege on Windows (evaluated in privileged fixtures; intentionally marked ignored under standard user execution).",
+  "modules": [
+    { "module": "access_history", "passed": 7, "ignored": 0 },
+    { "module": "ai_pipeline", "passed": 7, "ignored": 0 },
+    { "module": "audit", "passed": 8, "ignored": 0 },
+    { "module": "defense_controller", "passed": 3, "ignored": 0 },
+    { "module": "exclusion_settings", "passed": 6, "ignored": 1 },
+    { "module": "isolation_forest", "passed": 9, "ignored": 0 },
+    { "module": "learning", "passed": 25, "ignored": 0 },
+    { "module": "linux_access_history", "passed": 21, "ignored": 0, "note": "Parser and bounded execution policy logic verified" },
+    { "module": "linux_session", "passed": 13, "ignored": 0, "note": "Portal session state machine logic verified" },
+    { "module": "linux_socket_owners", "passed": 6, "ignored": 0, "note": "Socket inode mapping parser verified" },
+    { "module": "malware_analyzer", "passed": 6, "ignored": 0 },
+    { "module": "mlp", "passed": 14, "ignored": 0 },
+    { "module": "monitoring", "passed": 7, "ignored": 0 },
+    { "module": "notifications", "passed": 4, "ignored": 0 },
+    { "module": "observation_gate_tests", "passed": 6, "ignored": 0 },
+    { "module": "operation_records", "passed": 4, "ignored": 0 },
+    { "module": "privacy", "passed": 16, "ignored": 0 },
+    { "module": "quarantine", "passed": 11, "ignored": 0 },
+    { "module": "security_advisor", "passed": 4, "ignored": 0 },
+    { "module": "services", "passed": 17, "ignored": 1 },
+    { "module": "shutdown_result_tests", "passed": 5, "ignored": 0 },
+    { "module": "signatures", "passed": 17, "ignored": 0 }
+  ],
+  "frontendBuildCheck": {
+    "command": "npm run build (tsc --noEmit && vite build)",
+    "errors": 0
+  }
+}

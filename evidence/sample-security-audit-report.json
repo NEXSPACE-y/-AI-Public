@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportType": "SanitizedPublicShowcaseAuditSample",
+  "sanitizedProjectPath": "C:\\Users\\<USER>\\Desktop\\自律型サイバーAI防御システム",
+  "auditIntegrity": {
+    "verified": true,
+    "hashAlgorithm": "SHA-256 Hash Chain",
+    "statusNote": "全レコードの直前チェーンハッシュ連結整合性検証に合格（改ざん・破損・順序不整合なし）"
+  },
+  "codeSummary": {
+    "scannedAtMs": 1794872863441,
+    "rustFilesScanned": 29,
+    "frontendFilesScanned": 5,
+    "configFilesScanned": 7,
+    "totalLinesScanned": 35527,
+    "fr08Count": 58,
+    "fr09Count": 0,
+    "criticalCount": 0,
+    "highCount": 0,
+    "mediumCount": 0,
+    "lowCount": 58,
+    "codeHealthScore": 95
+  },
+  "languageToolchains": [
+    {
+      "language": "Rust (Cargo)",
+      "editionOrTarget": "Edition 2021",
+      "lockfilePresent": true,
+      "strictModeEnabled": true,
+      "dependencyCount": 10,
+      "unsafeOrBypassCount": 58,
+      "advisoryCount": 0,
+      "status": "healthy",
+      "detail": "Lockfile 有効 / 依存 10 件（OS FFI unsafe 境界 58 箇所・検証済）"
+    },
+    {
+      "language": "TypeScript / React",
+      "editionOrTarget": "TS ES2022",
+      "lockfilePresent": true,
+      "strictModeEnabled": true,
+      "dependencyCount": 9,
+      "unsafeOrBypassCount": 0,
+      "advisoryCount": 0,
+      "status": "healthy",
+      "detail": "Strict=ON / Lockfile 有 / 依存 9 件"
+    }
+  ],
+  "environmentControlsVerified": [
+    { "id": "ENV-MON-01", "status": "resolved", "title": "リアルタイム監視・OSアクセス監査収集の常時稼働" },
+    { "id": "ENV-DEF-01", "status": "resolved", "title": "自律隔離およびハイブリッド通知（NOTIF-01〜05）の有効化" },
+    { "id": "ENV-DEF-02", "status": "resolved", "title": "重要OSプロセス保護付き悪性プロセス自動停止の有効化" },
+    { "id": "ENV-WATCH-01", "status": "resolved", "title": "侵入経路フォルダに対するリアルタイム自動監視" },
+    { "id": "ENV-AI-01", "status": "resolved", "title": "プライバシー除外・日次定時学習・精度自動補正" },
+    { "id": "ENV-NET-01", "status": "recommended", "title": "全インターフェース待受ポートの不要公開点検・FW制御推奨" },
+    { "id": "ENV-CODE-01", "status": "resolved", "title": "ソースコードおよび言語仕様脆弱性監査（健全度 95/100）" }
+  ],
+  "redactionPolicy": {
+    "localUserPathsMasked": true,
+    "rawSourceCodeAndLineNumbersRedacted": true
+  }
+}
